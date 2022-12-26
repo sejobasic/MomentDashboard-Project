@@ -1,11 +1,16 @@
-let lat = ''
-let long = ''
+import { getCurrentDateAndTime, getUserLocation } from "./utils.js"
+
+window.setInterval(function () {
+  getCurrentDateAndTime()
+}, 1000)
+
+getUserLocation()
 
 fetch(
   'https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=landscape'
 )
-  .then((resp) => resp.json())
-  .then((data) => {
+  .then(resp => resp.json())
+  .then(data => {
     populateUnsplashData(data)
     console.log(data)
   })
@@ -29,29 +34,6 @@ function populateUnsplashData(data) {
   }
 }
 
-function getCurrentDateAndTime() {
-  const date = new Date()
-
-  const currentTime = date.toLocaleTimeString('en-us', { timeStyle: 'short' })
-  const currentDate = date.toLocaleDateString('en-US')
-
-  document.querySelector('.time-info').textContent = currentTime
-  document.querySelector('.date-info').textContent = currentDate
-}
-
-function getUserLocation() {
-  navigator.geolocation.getCurrentPosition((position) => {
-    lat = position.coords.latitude
-    long = position.coords.longitude
-    
-    console.log(position.coords.latitude, position.coords.longitude);
-  });
-}
 
 
-getCurrentDateAndTime()
-getUserLocation()
 
-window.setInterval(function(){
-  getCurrentDateAndTime()
-}, 1000);
