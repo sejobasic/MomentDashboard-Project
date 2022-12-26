@@ -7,10 +7,32 @@
 }
 
 body {
+  height: 100%;
   background: no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.3);
   background-size: cover;
   font-family: 'Hanken Grotesk', sans-serif;
+  color: whitesmoke;
+}
+
+.main-container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bottom-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+}
+
+.author-name {
+  font-size: 1.5em;
 }
