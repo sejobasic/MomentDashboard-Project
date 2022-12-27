@@ -1,10 +1,11 @@
-import { getCurrentDateAndTime, getUserLocation } from "./utils.js"
+import { getCurrentDateAndTime, getUserLocation, getRandomQuotes } from "./utils.js"
 
 window.setInterval(function () {
   getCurrentDateAndTime()
 }, 1000)
 
 getUserLocation()
+getRandomQuotes()
 
 fetch(
   'https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=landscape'

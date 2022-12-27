@@ -35,6 +35,9 @@ body {
 
 .middle-info {
   align-self: center;
+}
+
+.time-info {
   font-size: 9em;
   font-weight: 700;
 }
@@ -64,7 +67,8 @@ body {
 .location-info,
 .middle-info,
 .weather-info,
-.date-info  {
+.date-info,
+.weather-wrapper  {
   cursor: default;
 }
 
@@ -73,6 +77,39 @@ body {
   font-weight: 700;
 }
 
+.weather-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.weather-wrapper img {
+  width: 80px;
+}
+
+.city-info {
+  width: 100%;
+  text-align: right;
+  margin-top: -0.5em;
+}
+
 .weather-wrapper p {
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+.quote-wrapper {
+  width: 30%;
+  text-align: right;
+}
+
+.quote-info {
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+.quote-author {
+  font-weight: 700;
+  opacity: 0.6;
 }

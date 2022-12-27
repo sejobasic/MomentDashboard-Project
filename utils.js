@@ -35,4 +35,17 @@ function getUserLocation() {
   })
 }
 
-export { getCurrentDateAndTime, getUserLocation }
+function getRandomQuotes() {
+  fetch(
+    'https://api.quotable.io/random'
+  )
+    .then(resp => resp.json())
+    .then(data => {
+      console.log(data)
+        document.querySelector('.quote-info').textContent = `"${data.content}"`
+        document.querySelector('.quote-author').textContent = `-${data.author}`
+    })
+   
+}
+
+export { getCurrentDateAndTime, getUserLocation, getRandomQuotes }
