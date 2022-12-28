@@ -21,6 +21,7 @@ fetch(
   })
 
 function populateUnsplashData(data) {
+  console.log(data)
   const authorInfo = document.querySelector('.author-name')
   const authorName = `${data.user.first_name} ${data.user.last_name} / Unsplash`
 
