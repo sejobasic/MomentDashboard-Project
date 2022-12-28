@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "Practice project in JavaScript",
   "action": {
-    "default_icon": "icon.png"
+    "default_icon": "./img/icon.png"
   },
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    "newtab": "./public/index.html"
   }
 }
