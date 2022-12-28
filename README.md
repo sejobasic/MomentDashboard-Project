@@ -1,6 +1,9 @@
 ## Moment Chrome Dashboard Clone
 [LINK TO EXTENSION]()
 ### A JavaScript clone project of the Moment dashboard chrome extension.
+#### Getting local date and time using JavaScript Date object along with toLocaleTimeString method
+[LINK TO DATE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+[LINK TO TIME](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
 <hr />
 
 ## API'S USED
@@ -19,5 +22,6 @@
 <hr />
 <img  alt="Screen Shot 1" src="./img/1.png">
 <img  alt="Screen Shot 2" src="./img/2.png">
+<img  alt="Screen Shot 5" src="./img/5.png">
 <img  alt="Screen Shot 3" src="./img/3.png">
 <img  alt="Screen Shot 4" src="./img/4.png">
