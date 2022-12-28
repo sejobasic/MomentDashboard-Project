@@ -1,8 +1,8 @@
-## Moment Personal Dashboard Clone
+## Momentum Personal Dashboard Clone
 
 [LINK TO EXTENSION]()
 
-### A JavaScript clone project of the Moment dashboard chrome extension.
+### A JavaScript clone project of the Momentum dashboard chrome extension.
 
 <hr />
 
