@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "name": "Moment Clone Dashboard",
+  "name": "Personal Dashboard",
   "version": "1.0.0",
   "description": "Practice project in JavaScript",
   "action": {
