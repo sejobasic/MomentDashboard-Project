@@ -13,7 +13,7 @@ function getUserLocation() {
     const lat = position.coords.latitude
     const long = position.coords.longitude
     fetch(
-      `https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial`
+      `https://openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial`
     )
       .then((resp) => {
         if (!resp.ok) {
@@ -36,16 +36,13 @@ function getUserLocation() {
 }
 
 function getRandomQuotes() {
-  fetch(
-    'https://api.quotable.io/random'
-  )
-    .then(resp => resp.json())
-    .then(data => {
+  fetch('https://api.quotable.io/random')
+    .then((resp) => resp.json())
+    .then((data) => {
       console.log(data)
-        document.querySelector('.quote-info').textContent = `"${data.content}"`
-        document.querySelector('.quote-author').textContent = `-${data.author}`
+      document.querySelector('.quote-info').textContent = `"${data.content}"`
+      document.querySelector('.quote-author').textContent = `-${data.author}`
     })
-   
 }
 
 export { getCurrentDateAndTime, getUserLocation, getRandomQuotes }
